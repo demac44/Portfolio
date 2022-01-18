@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: #262a43;
+    font-family: 'Jura', sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+}
+.first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+.center img{
+    height: 130px;
+}
+.center h1, .center p{
+    color: beige;
+    margin-top: 15px;
+}
+.center h1{
+    font-size: 45px;
+}
+.center p{
+    font-size: 18px;
+}
+
+.projects-container{
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+}
+.section-title{
+    padding: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.projects-right,.projects-center,.projects-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.project-box{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    height: fit-content;
+}
+.proj-title{
+    padding: 10px;
+    color: #1f1f1f;
+}
+.proj-img{
+    width: 100%;
+}
+.proj-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.proj-tags{
+    width: 100%;
+    display: inline-flex;
+    height: fit-content;
+    flex-flow: wrap;
+    gap: 5px;
+}
+.proj-tags p{
+    padding: 5px 10px;
+    background-color: #262a43;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+}
+.proj-text{
+    width: 100%;
+    padding: 10px 5px;
+    line-height: 30px;
+}
+.proj-text p{
+    font-size: 18px;
+}
+.proj-links{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.proj-links i{
+    font-size: 30px;
+    color: #1f1f1f;
+    margin: 0 5px;
+}
+
+.about-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-box{
+    width: 60%;
+    line-height: 30px;
+    background-color: #191c2c;
+    padding: 30px 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-box p{
+    color: white;
+    font-size: 20px;
+}
+.about-box h2{
+    margin: 20px 0 5px 0;
+    color: white;
+    background-color: #262a43;
+    padding: 8px 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease .2s;
+}
+.about-box h2:hover{
+    background-color: #3c4268;
+}
+.skills-container{
+    width: 100vw;
+}
+.skills-box{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-flow: wrap;
+    height: fit-content;
+}
+.skills-box span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    width: fit-content;
+    font-size: 18px;
+    border: 2px solid #3f3f3f;
+}
+.contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.contact-btns{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 2px 5px #3f3f3f;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+.contact-btns i{
+    font-size: 25px;
+    color: white;
+}
+.contact-btns h6{
+    font-size: 13px;
+    color: white;
+    margin-left: 7px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.contact-btns:hover{
+    transform: scale(0.99);
+    box-shadow: 0 2px #3f3f3f;
+    margin-top: 2px;
+}
+.insta-btn{
+    background: linear-gradient(to bottom left,#515BD4,#8134AF,#DD2A7B,#FEDA77) ;
+}
+.fb-btn{
+    background-color: #395ca0;
+}
+.lI-btn{
+    background-color: #0077b5;
+}
+.git-btn{
+    background-color: #2f2f2f;
+}
+
+
+@media screen and (max-width:991px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-box{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px){
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .about-box{
+        width: 100%;
+    }
+    .contact-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-btns{
+        width: 60%;
+    }
+}
+@media screen and (max-width:350px){
+    .contact-btns{
+        width: 100%;
+    }
+}
