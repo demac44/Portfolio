@@ -10,7 +10,7 @@ a{
 }
 body{
     overflow-x: hidden;
-    background-color: #262a43;
+    background-color: black;
     font-family: 'Jura', sans-serif;
 }
 .container{
@@ -30,7 +30,7 @@ body{
     height: 130px;
 }
 .center h1, .center p{
-    color: beige;
+    color: white;
     margin-top: 15px;
 }
 .center h1{
@@ -65,13 +65,14 @@ body{
 }
 .project-box{
     width: 100%;
-    background-color: white;
+    background-color: #1b1b1b;
     padding: 10px;
     height: fit-content;
+    border-radius: 5px;
 }
 .proj-title{
     padding: 10px;
-    color: #1f1f1f;
+    color: white;
 }
 .proj-img{
     width: 100%;
@@ -79,6 +80,7 @@ body{
 .proj-img img{
     width: 100%;
     border-radius: 5px;
+    border: 1px solid #1f1f1f;
 }
 .proj-tags{
     width: 100%;
@@ -86,10 +88,11 @@ body{
     height: fit-content;
     flex-flow: wrap;
     gap: 5px;
+    margin-top: 10px;
 }
 .proj-tags p{
     padding: 5px 10px;
-    background-color: #262a43;
+    background-color: rgb(18, 100, 155);
     border-radius: 30px;
     font-size: 16px;
     color: white;
@@ -101,6 +104,7 @@ body{
 }
 .proj-text p{
     font-size: 18px;
+    color: white;
 }
 .proj-links{
     width: 100%;
@@ -109,7 +113,7 @@ body{
 }
 .proj-links i{
     font-size: 30px;
-    color: #1f1f1f;
+    color: white;
     margin: 0 5px;
 }
 
@@ -124,9 +128,9 @@ body{
 .about-box{
     width: 60%;
     line-height: 30px;
-    background-color: #191c2c;
+    background-color: black;
     padding: 30px 20px;
-    text-align: justify;
+    text-align:justify;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,10 +140,16 @@ body{
     color: white;
     font-size: 20px;
 }
+.about-box p a{
+    color: #ffbb00;
+    text-decoration: underline;
+}
 .about-box h2{
     margin: 20px 0 5px 0;
     color: white;
-    background-color: #262a43;
+    background-color: black;
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
     padding: 8px 10px;
     width: 200px;
     text-align: center;
@@ -147,7 +157,7 @@ body{
     transition: ease .2s;
 }
 .about-box h2:hover{
-    background-color: #3c4268;
+    background-color: #1f1f1f;
 }
 .skills-container{
     width: 100vw;
@@ -164,11 +174,11 @@ body{
     align-items: center;
     gap: 5px;
     padding: 10px 20px;
-    background-color: rgb(53, 53, 53);
+    background-color: #1b1b1b;
     color: #ffffff;
     width: fit-content;
     font-size: 18px;
-    border: 2px solid #3f3f3f;
+    border-radius: 5px;
 }
 .contact-box{
     width: 100%;
