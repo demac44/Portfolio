@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+>    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+
+    </script>
+    <script>
+        document.querySelector('.contact-btn').addEventListener('click', ()=>window.scrollTo(0, document.body.scrollHeight))
+
+    </script>
+    <script src="https://kit.fontawesome.com/58812d83b9.js" crossorigin="anonymous"></script>
     <title>Portfolio | Demir Umejr</title>
 </head>
 <body>
-    <div class="first-container container">
+    <div class="first-container container-css">
         <div class="center">    
             <img src="./images/logop.png" alt="">
             <h1>Demir Umejr</h1>
@@ -24,10 +35,37 @@
             <h2 class="contact-btn">Contact</h2>
         </div>
     </div>
-    <div class="projects-container container">
+    <div class="projects-container container-css">
         <h1 class="section-title">Projects</h1>
         <div class="projects">
-            <div class="projects-right">
+            <div class="projects-left">
+
+                <div class="project-box">
+                    <!-- PLAMEN MOBILE ---------------------------------------------- -->
+                    <div class="proj-title">
+                        <h2>TheHangman</h2>
+                    </div>
+                    
+                    <div class="proj-img">
+                        <img src="./images/projects/thehangman_game.png" alt="">
+                    </div>
+                
+
+                    <div class="proj-tags">
+                        <p>Python</p>
+                        <p>PyGame</p>
+                    </div>
+                    
+                    <div class="proj-text">
+                        <p>TheHangman game made with Pygame</p>
+                    </div>
+
+                    <div class="proj-links">
+                        <a href="https://github.com/demac44/theHangman" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://drive.google.com/uc?id=1uIGeq6JYdYHw2dgsC7FB4Fig5nkMqKpH&export=download" target="_blank"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
                 <div class="project-box">
                     <!-- PLAMEN MOBILE ---------------------------------------------- -->
                     <div class="proj-title">
@@ -131,7 +169,7 @@
                     </div>
                     
                     <div class="proj-text">
-                        <p>SLanding page for a real estate agent</p>
+                        <p>Landing page for a real estate agent</p>
                     </div>
 
                     <div class="proj-links">
@@ -142,7 +180,7 @@
 
             </div>
 
-            <div class="projects-left">
+            <div class="projects-right">
                 <div class="project-box">
                     <!-- VISIT BIH  ---------------------------------------------- -->
                     <div class="proj-title">
@@ -173,6 +211,31 @@
                         <a href="https://visitbih.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
+
+                <div class="project-box">
+                    <!-- MATH QUIZ---------------------------------------------- -->
+                    <div class="proj-title">
+                        <h2>News website</h2>
+                    </div>
+                    <div class="proj-img">
+                        <img src="./images/projects/newsapi.png" alt="">
+                    </div>
+                    
+                    <div class="proj-tags">
+                        <p>Angular</p>
+                        <p>NewsAPI</p>
+                        <p>CSS</p>
+                    </div>
+                    
+                    <div class="proj-text">
+                        <p>Latest news website made with Angular and NewsAPI. Some of the features are pagination, search and changing languages and categories.</p>
+                    </div>
+                    
+                    <div class="proj-links">
+                        <a href="https://github.com/demac44/newsWebsite" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
                 <div class="project-box">
                     <!-- MATH QUIZ---------------------------------------------- -->
                     <div class="proj-title">
@@ -189,7 +252,7 @@
                     </div>
                     
                     <div class="proj-text">
-                        <p>Mathematical version of "Who wants to be a millionaire".The game gives you two random numbers, operation and 30 seconds to guess. Game gets more difficult as you are moving up.</p>
+                        <p>Mathematical version of "Who wants to be a millionaire".The game gives you two random numbers, operation and 30 seconds to guess. Game gets more difficult as you move up.</p>
                     </div>
                     
                     <div class="proj-links">
@@ -204,14 +267,6 @@
             <h1 class="section-title">Skills</h1>
             <div class="skills-box">
                 <span>
-                    <i class="fab fa-react"></i>                        
-                    <p>React</p>
-                </span>
-                <span>
-                    <i class="fab fa-react"></i>                        
-                    <p>React Native</p>
-                </span>
-                <span>
                     <i class="fab fa-node-js"></i>
                     <p>NodeJS</p>
                 </span>
@@ -219,8 +274,24 @@
                     <p>Express</p>
                 </span>
                 <span>
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </span>
+                <span>
                     <i class="fab fa-php"></i>
                     <p>PHP</p>
+                </span>
+                <span>
+                    <i class="fab fa-react"></i>                        
+                    <p>React</p>
+                </span>
+                <span>
+                    <i class="fab fa-angular"></i>
+                    <p>Angular</p>
+                </span>
+                <span>
+                    <i class="fab fa-react"></i>                        
+                    <p>React Native</p>
                 </span>
                 <!-- <span>
                     <i class="fab fa-laravel"></i>
@@ -229,10 +300,6 @@
                 <!-- <span>
                     <p>C++</p>
                 </span> -->
-                <span>
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
-                </span>
                 <span>
                     <p>GraphQL</p>
                 </span>
@@ -291,11 +358,6 @@
                 </a>
             </div>
         </div>
-
-        <script src="https://kit.fontawesome.com/58812d83b9.js" crossorigin="anonymous"></script>
-        <script>
-            document.querySelector('.contact-btn').addEventListener('click', ()=>window.scrollTo(0, document.body.scrollHeight))
-        </script>
     </div>
 </body>
 </html>
