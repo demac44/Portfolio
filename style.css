@@ -457,3 +457,22 @@ body{
         font-size: 16px;
     }
 }
+
+.about-box h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.about-box h3 {
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    font-weight: 100;
+}
+
+.btns {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
