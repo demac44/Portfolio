@@ -476,3 +476,20 @@ body{
     align-items: center;
     gap: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btns a {
+        width: 100%;
+    }
+    .about-box h1 {
+        font-size: 45px;
+    }
+    .about-box h3 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
